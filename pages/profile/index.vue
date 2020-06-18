@@ -5,15 +5,8 @@
       <h1 class="title">VueProfile</h1>
       <h2 class="subtitle">Just profile</h2>
       <div class="links">
-        <nuxt-link to="/">Home page</nuxt-link>
+        <nuxt-link to="/">Home page1</nuxt-link>
       </div>
-      <form action="/" @keydown="debug">
-        First:
-        <input type="text" name="fname" />
-        <br />Second:
-        <input type="text" name="fname2" />
-        <br />
-      </form>
     </div>
   </div>
 </template>
@@ -24,16 +17,11 @@ import Logo from '~/components/Logo.vue'
 export default {
   components: {
     Logo
-  },
-  methods: {
-    debug(event) {
-      console.warn(event.target.name)
-    }
   }
 }
 </script>
 
-<style>
+<style scoped>
 .container {
   margin: 0 auto;
   min-height: 100vh;
